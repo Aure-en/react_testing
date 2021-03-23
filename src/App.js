@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Basic from "./components/Basic";
 import Counter from "./components/Counter";
+import Form1 from "./components/Form1";
+import TestAxios from "./components/TestAxios";
 import TestHook from "./components/TestHook";
 import TestHookContext from "./components/TestHookContext";
 import TestHookReducer from "./components/TestHookReducer";
@@ -34,6 +36,9 @@ function App() {
       }}>
         <TestHookContext />
       </Context.Provider>
+      <h1>Form</h1>
+      <Form1 />
+      <TestAxios url="https://jsonplaceholder.typicode.com/posts/1" />
     </div>
   );
 }
